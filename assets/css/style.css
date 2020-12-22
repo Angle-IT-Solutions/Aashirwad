@@ -985,12 +985,14 @@ section {
   padding: 30px;
   border-radius: 6px;
   background: #f1f7fd;
+  height: 175px;
 }
 
 .services .icon-box i {
   float: left;
   color: #2c4964;
-  font-size: 40px;
+  font-size: 40px;    
+  margin-top: 10px;
 }
 
 .services .icon-box h4 {
@@ -1022,6 +1024,17 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+
+
+@media (max-width: 992px) {
+  .services .icon-box {
+    height: auto;
+  }
+  .services .icon-box i {
+    margin-top: 0;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Appointments
