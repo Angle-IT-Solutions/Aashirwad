@@ -1302,9 +1302,14 @@ section {
 }
 
 .technology .member .pic {
-  overflow: hidden;
-  width: 205px;
+  width: 300px;
+  max-width: 100% !important;
   /* border-radius: 50%; */
+}
+
+.img-fluid-tech {
+  width: 200px;
+  /* height: 150px; */
 }
 
 .technology .member .pic img {
@@ -1355,11 +1360,14 @@ section {
   font-size: 15px;
 }
 
-.technology .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+@media (max-width: 767px) {
+  .technology .member .pic {
+    margin: auto;
+  }
+
+.img-fluid-tech {
+  margin: 0 auto;
+}
 }
 
 
