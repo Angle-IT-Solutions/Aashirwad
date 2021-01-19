@@ -34,6 +34,14 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    hr.style-two {
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      }
+</style>
 </head>
 
 <body>
@@ -59,8 +67,15 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>          
+          <li class="drop-down"><a href="">Services</a>
+            <ul>
+              <li><a href="Cataract.html">Cataract Service</a></li>
+              <li><a href="Glaucoma.html">Glaucoma Services</a></li>
+              <li><a href="Refractive.html">Lasik and Refractive Surgery Services</a></li>
+              <li><a href="Premium.html">Premium IOLs</a></li>
+            </ul>
+          </li>          
           <li><a href="#doctors">Doctors</a></li>
           <li><a href="technology.html">Technology</a></li>
           <li><a href="#gallery">Gallery</a></li>
@@ -190,36 +205,36 @@
 
         <section id="features" class="features">
           <div class="container" data-aos="fade-up">
-
             <ul class="nav nav-tabs row d-flex">
+            <li class="nav-item col-3">
+              <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                <i class="ri-eye-2-line"></i>
+                <h4 class="d-none d-lg-block">Cataract Services</h4>
+              </a>
+            </li>
+            
               <li class="nav-item col-3">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                <a class="nav-link " data-toggle="tab" href="#tab-2">
                   <i class="ri-eye-line"></i>
                   <h4 class="d-none d-lg-block">Vitreo Retinal Services</h4>
                 </a>
               </li>
               <li class="nav-item col-3">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">
                   <i class="ri-eye-close-line"></i>
                   <h4 class="d-none d-lg-block">Uvea Services</h4>
                 </a>
               </li>
               <li class="nav-item col-3">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">
                   <i class="ri-sun-line"></i>
                   <h4 class="d-none d-lg-block">Ocular Trauma Services</h4>
                 </a>
-              </li>
-              <li class="nav-item col-3">
-                <a class="nav-link" data-toggle="tab" href="#tab-4">
-                  <i class="ri-eye-2-line"></i>
-                  <h4 class="d-none d-lg-block">Cataract Services</h4>
-                </a>
-              </li>
+              </li>              
             </ul>
 
             <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
+              <div class="tab-pane " id="tab-2">
                 <div class="row">
                   
                   <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
@@ -239,11 +254,29 @@
                     </ul>
                   </div>
                   <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>                  
+                </div>
+                
+              </div>
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-5 order-2 order-lg-1 mt-3 mt-lg-0">
+                    <h3>Cataract Diagnosis and Surgery</h3>
+                    <p>We are proud of our prime expertise and highest success rate of our specialty - No Injection, No
+                      Stitch, No Patch Cataract surgery by Advanced Micro-Phaco (Micro-Incision Cataract Surgery, MICS)
+                      technique using world-class equipments.</p>
+                    <h3>Cataract + Refractive Surgery</h3>
+                    <p>We provide full range of Advanced Premium IOLs - Multifocal and Toric for combined cataract and
+                      refractive surgery. This helps to reduce or omit spectacle dependency after cataract surgery.</p>
+                  </div>
+                  <div class="col-lg-7 order-1 order-lg-2 text-center">
                     <img src="assets/img/gallery/gallery-05.jpeg" alt="" class="img-fluid">
                   </div>
                 </div>
+                
               </div>
-              <div class="tab-pane" id="tab-2">
+              <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                     <h3>Uveal tract is the vascular middle coat of the eye ball. Inflammation of the uveal tract is
@@ -260,9 +293,10 @@
                   <div class="col-lg-6 order-1 order-lg-2 text-center">
                     <img src="https://cdn.pixabay.com/photo/2013/03/09/04/09/optometrist-91751_1280.jpg" alt="" class="img-fluid">
                   </div>
-                </div>
+                </div>                
+                
               </div>
-              <div class="tab-pane" id="tab-3">
+              <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                     <h3>Sankalp Eye hospital and Retina Centre offers complete management of various ocular injuries.
@@ -283,23 +317,9 @@
                     <img src="https://cdn.pixabay.com/photo/2020/04/25/15/04/eye-check-5091178_1280.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
+                
               </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-5 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <h3>Cataract Diagnosis and Surgery</h3>
-                    <p>We are proud of our prime expertise and highest success rate of our specialty - No Injection, No
-                      Stitch, No Patch Cataract surgery by Advanced Micro-Phaco (Micro-Incision Cataract Surgery, MICS)
-                      technique using world-class equipments.</p>
-                    <h3>Cataract + Refractive Surgery</h3>
-                    <p>We provide full range of Advanced Premium IOLs - Multifocal and Toric for combined cataract and
-                      refractive surgery. This helps to reduce or omit spectacle dependency after cataract surgery.</p>
-                  </div>
-                  <div class="col-lg-7 order-1 order-lg-2 text-center">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
           </div>
@@ -772,7 +792,7 @@
           &copy; Copyright <strong><span>Aashirwad</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-         Designed by <a href="#">Angle IT Solutions Pvt. Ltd.</a>
+          Designed by <a href="https://www.angelitsolutions.co.in/">Angle IT Solutions Pvt. Ltd.</a>
         </div>
       </div>
     </div>
